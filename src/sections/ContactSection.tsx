@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { profile } from "@/config/profile";
 import { AvailabilityCard } from "@/components/AvailabilityCard";
+import { ShareCard } from "@/components/ShareCard";
 import { ContactForm } from "@/components/ContactForm";
 import { Section } from "@/components/layout/Section";
 import { SocialCard } from "@/components/SocialCard";
@@ -32,6 +33,7 @@ export function ContactSection() {
             ))}
           </div>
           <AvailabilityCard />
+          <ShareCard />
         </div>
       </div>
     </Section>

@@ -163,6 +163,13 @@
     "label": "Availability",
     "text": "Available for senior engineering roles, product consulting, and ambitious software projects."
   },
+  "share": {
+    "label": "Spread the Word",
+    "text1": "Good opportunities often start with a simple introduction.",
+    "text2": "If someone comes to mind, I'd appreciate you sharing my portfolio.",
+    "cta": "Share on WhatsApp",
+    "message": "Check out Weverton Rodrigues — Senior Product Engineer: {{url}}"
+  },
   "validation": {
     "nameRequired": "Please enter your name.",
     "emailRequired": "Please enter your email.",

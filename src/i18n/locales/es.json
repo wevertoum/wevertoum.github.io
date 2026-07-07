@@ -163,6 +163,13 @@
     "label": "Disponibilidad",
     "text": "Disponible para roles senior de ingeniería, consultoría de producto y proyectos de software ambiciosos."
   },
+  "share": {
+    "label": "Corre la Voz",
+    "text1": "Las grandes oportunidades suelen comenzar con una simple recomendación.",
+    "text2": "Si alguien vino a tu mente, te agradecería mucho que compartieras mi portafolio.",
+    "cta": "Compartir en WhatsApp",
+    "message": "Conoce a Weverton Rodrigues — Ingeniero de Producto Senior: {{url}}"
+  },
   "validation": {
     "nameRequired": "Por favor, ingresa tu nombre.",
     "emailRequired": "Por favor, ingresa tu correo.",
