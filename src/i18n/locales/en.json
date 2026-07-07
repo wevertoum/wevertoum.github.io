@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Weverton Rodrigues | Senior Product Engineer",
+    "description": "Weverton Rodrigues — Senior Product Engineer turning complex ideas into scalable software. AI-native applications, distributed systems, and modern web platforms.",
+    "keywords": "Weverton Rodrigues, senior product engineer, full-stack engineer, AI products, RAG, semantic search, MCP, React, TypeScript, Next.js, NestJS, GraphQL, AWS, Kubernetes, healthcare software, enterprise SaaS, React Native, distributed systems, Brazil"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "Senior Product Engineer",
+    "greeting": "Hi, I'm {{name}}.",
+    "tagline": "I turn complex product ideas into scalable software.",
+    "description": "Senior Product Engineer building AI-native applications, distributed systems, and modern web platforms—from architecture to production.",
+    "impact": "Known for turning ambiguous ideas into reliable products, improving engineering workflows, and raising the technical bar across teams.",
+    "cta": "Explore Projects"
+  },
+  "work": {
+    "title": "Work",
+    "intro": "Products I've built across AI-native marketing, healthcare, enterprise SaaS, and distributed systems—from semantic search and RAG pipelines to offline-first mobile apps and event-driven microservices.",
+    "projectsLabel": "Selected Work",
+    "items": [
+      {
+        "title": "AI Product Platform",
+        "description": "Built AI-native marketing workflows combining semantic search, knowledge bases, RAG, and intelligent agents (MCP, Playbooks) to accelerate content operations. Shipped production-grade retrieval pipelines and observability on AWS at global scale.",
+        "highlight": "Engineering decisions that improved content velocity, retrieval accuracy, and operational scale across a distributed marketing stack.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "GraphQL",
+          "OpenAI API",
+          "RAG",
+          "Semantic Search",
+          "MCP",
+          "AWS",
+          "ECS",
+          "OpenSearch",
+          "DynamoDB",
+          "Docker",
+          "Langfuse"
+        ]
+      },
+      {
+        "title": "Healthcare Platforms",
+        "description": "Designed secure healthcare and telemedicine applications with enterprise SSO, research tooling, and AI-assisted development—accelerating clinical and research workflows without compromising reliability or compliance.",
+        "highlight": "Faster iteration on research and clinical tools while maintaining security, authentication, and enterprise compliance standards.",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Keycloak",
+          "TailwindCSS",
+          "Vite",
+          "React Query",
+          "AI Agents",
+          "Enterprise Auth"
+        ]
+      },
+      {
+        "title": "Enterprise Support Systems",
+        "description": "Designed enterprise support platforms with visual chatbot flow editors, real-time helpdesk ticketing, WebSocket collaboration, and offline-first mobile experiences used daily by support and field operations teams.",
+        "highlight": "Platforms adopted for high-volume ticketing, conversational workflow design, and field operations with secure offline sync.",
+        "tags": [
+          "React",
+          "React Native",
+          "Next.js",
+          "TypeScript",
+          "WebSockets",
+          "Firebase",
+          "MMKV",
+          "TailwindCSS",
+          "Ant Design"
+        ]
+      },
+      {
+        "title": "Distributed Systems Platform",
+        "description": "Led full-stack delivery of scalable SaaS with a GraphQL BFF, NestJS microservices, RabbitMQ messaging, and Temporal saga workflows—containerized on Kubernetes with hexagonal architecture and comprehensive test coverage.",
+        "highlight": "Improved idempotency, async reliability, and team velocity through event-driven design and pragmatic architecture decisions.",
+        "tags": [
+          "React",
+          "Remix",
+          "NestJS",
+          "GraphQL",
+          "TypeScript",
+          "RabbitMQ",
+          "Temporal",
+          "Kubernetes",
+          "Docker",
+          "React Query",
+          "Playwright",
+          "Vitest"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "portraitAlt": "Portrait of {{name}}",
+    "bio": [
+      "I enjoy solving difficult engineering problems where architecture, product thinking, and user experience meet. My work ranges from AI-native applications to distributed backend systems, always with a strong focus on simplicity, scalability, and long-term maintainability.",
+      "Over the last eight years, I've helped companies build products from the ground up, modernize legacy platforms, and deliver complex systems used by thousands of users across healthcare, AI, and enterprise software."
+    ],
+    "philosophyTitle": "Philosophy",
+    "philosophy": [
+      "Solve problems, not tickets",
+      "Design systems that outlive frameworks",
+      "Optimize for clarity before cleverness",
+      "Leave every codebase better than you found it"
+    ],
+    "skillsTitle": "Skills",
+    "skills": [
+      "Frontend Architecture",
+      "AI Product Engineering",
+      "System Design",
+      "Cloud Architecture",
+      "Developer Experience",
+      "Technical Leadership"
+    ],
+    "stackTitle": "Technologies I enjoy working with",
+    "experienceTitle": "Experience",
+    "experience": [
+      "8+ years building production software",
+      "Remote-first engineering since 2018",
+      "AI-native product development",
+      "Enterprise SaaS and healthcare",
+      "Global distributed teams"
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Let's Build Something Great",
+    "intro": "Whether you're building a new product, scaling an existing platform, or exploring AI-powered solutions, I'd love to hear about it.",
+    "formTitle": "Get in Touch",
+    "connectTitle": "Connect",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "message": "Tell me about your project or opportunity..."
+    },
+    "submit": "Let's Talk",
+    "sending": "Sending...",
+    "success": "Message sent. Talk soon!",
+    "error": "Something went wrong. Try again."
+  },
+  "availability": {
+    "label": "Availability",
+    "text": "Available for senior engineering roles, product consulting, and ambitious software projects."
+  },
+  "validation": {
+    "nameRequired": "Please enter your name.",
+    "emailRequired": "Please enter your email.",
+    "emailInvalid": "Please enter a valid email.",
+    "messageRequired": "Please write a message."
+  },
+  "footer": {
+    "rights": "© {{year}} Weverton Rodrigues"
+  },
+  "language": {
+    "label": "Language"
+  }
+}

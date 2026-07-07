@@ -1,0 +1,1 @@
+export { SocialIconLink } from "./SocialIconLink";

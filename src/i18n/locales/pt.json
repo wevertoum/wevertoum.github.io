@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Weverton Rodrigues | Engenheiro de Produto Senior",
+    "description": "Weverton Rodrigues — Engenheiro de Produto Senior que transforma ideias complexas em software escalável. Aplicações nativas de IA, sistemas distribuídos e plataformas web modernas.",
+    "keywords": "Weverton Rodrigues, engenheiro de produto, engenheiro full-stack, produtos IA, RAG, busca semântica, MCP, React, TypeScript, Next.js, NestJS, GraphQL, AWS, Kubernetes, software de saúde, SaaS empresarial, React Native, sistemas distribuídos, Brasil"
+  },
+  "nav": {
+    "home": "Início",
+    "work": "Trabalho",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "eyebrow": "Engenheiro de Produto Senior",
+    "greeting": "Olá, sou {{name}}.",
+    "tagline": "Transformo ideias de produto complexas em software escalável.",
+    "description": "Engenheiro de Produto Senior construindo aplicações nativas de IA, sistemas distribuídos e plataformas web modernas—da arquitetura à produção.",
+    "impact": "Reconhecido por transformar ideias ambíguas em produtos confiáveis, melhorar fluxos de engenharia e elevar o nível técnico dos times.",
+    "cta": "Explorar Projetos"
+  },
+  "work": {
+    "title": "Trabalho",
+    "intro": "Produtos que construí em marketing com IA, saúde, SaaS empresarial e sistemas distribuídos—de pipelines RAG e busca semântica a apps mobile offline-first e microsserviços orientados a eventos.",
+    "projectsLabel": "Trabalho Selecionado",
+    "items": [
+      {
+        "title": "Plataforma de Produto com IA",
+        "description": "Construí fluxos de marketing nativos de IA combinando busca semântica, bases de conhecimento, RAG e agentes inteligentes (MCP, Playbooks) para acelerar operações de conteúdo. Entreguei pipelines de retrieval e observabilidade em produção na AWS em escala global.",
+        "highlight": "Decisões de engenharia que melhoraram velocidade de conteúdo, precisão de retrieval e escala operacional em um stack de marketing distribuído.",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "GraphQL",
+          "OpenAI API",
+          "RAG",
+          "Semantic Search",
+          "MCP",
+          "AWS",
+          "ECS",
+          "OpenSearch",
+          "DynamoDB",
+          "Docker",
+          "Langfuse"
+        ]
+      },
+      {
+        "title": "Plataformas de Saúde",
+        "description": "Projetei aplicações seguras de saúde e telemedicina com SSO empresarial, ferramentas de pesquisa e desenvolvimento assistido por IA—acelerando fluxos clínicos e de pesquisa sem comprometer confiabilidade ou compliance.",
+        "highlight": "Iteração mais rápida em ferramentas de pesquisa e clínicas mantendo segurança, autenticação e padrões de compliance empresarial.",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Keycloak",
+          "TailwindCSS",
+          "Vite",
+          "React Query",
+          "AI Agents",
+          "Enterprise Auth"
+        ]
+      },
+      {
+        "title": "Sistemas de Suporte Empresarial",
+        "description": "Projetei plataformas de suporte com editores visuais de fluxo de chatbot, ticketing em tempo real, colaboração via WebSocket e experiências mobile offline-first usadas diariamente por times de suporte e operações de campo.",
+        "highlight": "Plataformas adotadas para ticketing de alto volume, design de fluxos conversacionais e operações de campo com sincronização offline segura.",
+        "tags": [
+          "React",
+          "React Native",
+          "Next.js",
+          "TypeScript",
+          "WebSockets",
+          "Firebase",
+          "MMKV",
+          "TailwindCSS",
+          "Ant Design"
+        ]
+      },
+      {
+        "title": "Plataforma de Sistemas Distribuídos",
+        "description": "Liderei entrega full-stack de SaaS escalável com GraphQL BFF, microsserviços NestJS, mensageria RabbitMQ e workflows saga com Temporal—containerizado em Kubernetes com arquitetura hexagonal e cobertura de testes abrangente.",
+        "highlight": "Melhorei idempotência, confiabilidade assíncrona e velocidade do time com design orientado a eventos e decisões arquiteturais pragmáticas.",
+        "tags": [
+          "React",
+          "Remix",
+          "NestJS",
+          "GraphQL",
+          "TypeScript",
+          "RabbitMQ",
+          "Temporal",
+          "Kubernetes",
+          "Docker",
+          "React Query",
+          "Playwright",
+          "Vitest"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre",
+    "portraitAlt": "Retrato de {{name}}",
+    "bio": [
+      "Gosto de resolver problemas difíceis de engenharia onde arquitetura, pensamento de produto e experiência do usuário se encontram. Meu trabalho vai de aplicações nativas de IA a sistemas backend distribuídos, sempre com foco em simplicidade, escalabilidade e manutenibilidade a longo prazo.",
+      "Nos últimos oito anos, ajudei empresas a construir produtos do zero, modernizar plataformas legadas e entregar sistemas complexos usados por milhares de usuários em saúde, IA e software empresarial."
+    ],
+    "philosophyTitle": "Filosofia",
+    "philosophy": [
+      "Resolver problemas, não tickets",
+      "Projetar sistemas que sobrevivem a frameworks",
+      "Otimizar por clareza antes de esperteza",
+      "Deixar cada codebase melhor do que encontrei"
+    ],
+    "skillsTitle": "Habilidades",
+    "skills": [
+      "Arquitetura Frontend",
+      "Engenharia de Produto com IA",
+      "Design de Sistemas",
+      "Arquitetura Cloud",
+      "Experiência do Desenvolvedor",
+      "Liderança Técnica"
+    ],
+    "stackTitle": "Tecnologias com as quais gosto de trabalhar",
+    "experienceTitle": "Experiência",
+    "experience": [
+      "8+ anos construindo software em produção",
+      "Engenharia remota desde 2018",
+      "Desenvolvimento de produtos nativos de IA",
+      "SaaS empresarial e saúde",
+      "Times globais distribuídos"
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Vamos Construir Algo Incrível",
+    "intro": "Seja para criar um novo produto, escalar uma plataforma existente ou explorar soluções com IA, adoraria conversar.",
+    "formTitle": "Entre em Contato",
+    "connectTitle": "Conectar",
+    "fields": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem"
+    },
+    "placeholders": {
+      "name": "Seu nome",
+      "email": "seu@email.com",
+      "message": "Conte sobre seu projeto ou oportunidade..."
+    },
+    "submit": "Vamos Conversar",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada. Até breve!",
+    "error": "Algo deu errado. Tente novamente."
+  },
+  "availability": {
+    "label": "Disponibilidade",
+    "text": "Disponível para vagas senior de engenharia, consultoria de produto e projetos de software ambiciosos."
+  },
+  "validation": {
+    "nameRequired": "Por favor, informe seu nome.",
+    "emailRequired": "Por favor, informe seu e-mail.",
+    "emailInvalid": "Por favor, informe um e-mail válido.",
+    "messageRequired": "Por favor, escreva uma mensagem."
+  },
+  "footer": {
+    "rights": "© {{year}} Weverton Rodrigues"
+  },
+  "language": {
+    "label": "Idioma"
+  }
+}
