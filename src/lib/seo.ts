@@ -17,7 +17,7 @@ export function buildPersonJsonLd(language: string) {
     email: profile.email,
     jobTitle: profile.role,
     description: profile.role,
-    image: `${site.url}/og-image.svg`,
+    image: `${site.url}/og-image.png`,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Goiânia",

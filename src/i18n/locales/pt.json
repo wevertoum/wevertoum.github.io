@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "Weverton Rodrigues | Engenheiro de Produto Senior",
-    "description": "Weverton Rodrigues — Engenheiro de Produto Senior em Goiânia, Brasil. Portfólio e projetos em React, TypeScript, AWS e IA. Aberto a oportunidades em engenharia senior.",
+    "description": "Weverton Rodrigues — Engenheiro de Produto Senior em Goiânia, Brasil. Portfólio e projetos em React, TypeScript, AWS e IA. Aberto a oportunidades senior.",
+    "ogDescription": "Engenheiro de Produto Senior em Goiânia, Brasil. Apps de IA, sistemas distribuídos e plataformas web com React e TypeScript.",
     "keywords": "Weverton Rodrigues, engenheiro de produto, engenheiro full-stack, produtos IA, RAG, busca semântica, MCP, React, TypeScript, Next.js, NestJS, GraphQL, AWS, Kubernetes, software de saúde, SaaS empresarial, React Native, sistemas distribuídos, Goiânia, Brasil, portfólio, oportunidades"
   },
   "nav": {

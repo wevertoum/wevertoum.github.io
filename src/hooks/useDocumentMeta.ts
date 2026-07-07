@@ -103,8 +103,9 @@ export function useDocumentMeta() {
   const language = (i18n.resolvedLanguage ?? "en").slice(0, 2);
   const title = t("meta.title");
   const description = t("meta.description");
+  const ogDescription = t("meta.ogDescription");
   const keywords = t("meta.keywords");
-  const ogImage = `${site.url}/og-image.svg`;
+  const ogImage = `${site.url}/og-image.png`;
   const workProjects = useMemo(
     () => t("work.items", { returnObjects: true }) as WorkProjectSeo[],
     [t],
@@ -131,20 +132,23 @@ export function useDocumentMeta() {
     setLink("alternate", site.url, "x-default");
 
     setMetaProperty("og:title", title);
-    setMetaProperty("og:description", description);
+    setMetaProperty("og:description", ogDescription);
     setMetaProperty("og:type", "profile");
     setMetaProperty("og:url", site.url);
     setMetaProperty("og:site_name", site.name);
     setMetaProperty("og:locale", language === "pt" ? "pt_BR" : language === "es" ? "es_ES" : "en_US");
     setMetaProperty("og:image", ogImage);
+    setMetaProperty("og:image:width", "1200");
+    setMetaProperty("og:image:height", "630");
+    setMetaProperty("og:image:type", "image/png");
     setMetaProperty("og:image:alt", `${profile.name} — ${profile.role}`);
 
     setMetaName("twitter:card", "summary_large_image");
     setMetaName("twitter:title", title);
-    setMetaName("twitter:description", description);
+    setMetaName("twitter:description", ogDescription);
     setMetaName("twitter:image", ogImage);
     setMetaName("twitter:creator", site.twitterHandle);
 
     setStructuredData(language, workProjects, workListName);
-  }, [language, title, description, keywords, ogImage, workProjects, workListName, theme]);
+  }, [language, title, description, ogDescription, keywords, ogImage, workProjects, workListName, theme]);
 }
