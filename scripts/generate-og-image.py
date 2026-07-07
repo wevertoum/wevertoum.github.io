@@ -124,8 +124,7 @@ def main() -> None:
     draw.text((left, 232), "I turn complex product ideas", fill=MUTED, font=subtitle)
     draw.text((left, 268), "into scalable software.", fill=MUTED, font=subtitle)
     draw.text((left, 330), "React · TypeScript · AWS · AI", fill=MUTED, font=body)
-    draw.text((left, 368), "Open to senior engineering roles", fill=ACCENT, font=body)
-    draw_cta_button(draw, left, 418, "View Portfolio  →", cta)
+    draw_cta_button(draw, left, 378, "View Portfolio  →", cta)
     draw.text((left, 548), "<weverton /> · weverton.me", fill=MUTED, font=footer)
 
     img.save(OUT, "PNG", optimize=True)
