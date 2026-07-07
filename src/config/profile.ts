@@ -4,7 +4,6 @@ export const profile = {
   role: "Senior Product Engineer",
   email: "wevertondev@outlook.com",
   location: "Goiânia, Goiás, Brazil",
-  formspreeId: "xoqpgrlv",
   initials: "WR",
   socials: [
     {

@@ -5,6 +5,7 @@ import { sendContact } from "@/lib/sendContact";
 describe("sendContact", () => {
   beforeEach(() => {
     vi.restoreAllMocks();
+    vi.stubEnv("VITE_FORMSPREE_FORM_ID", "mvzjyvor");
   });
 
   it("posts payload to Formspree", async () => {
@@ -18,7 +19,7 @@ describe("sendContact", () => {
     });
 
     expect(fetchMock).toHaveBeenCalledWith(
-      "https://formspree.io/f/xoqpgrlv",
+      "https://formspree.io/f/mvzjyvor",
       expect.objectContaining({
         method: "POST",
         body: JSON.stringify({
@@ -36,5 +37,13 @@ describe("sendContact", () => {
     await expect(
       sendContact({ name: "Jane", email: "jane@example.com", message: "Hi" }),
     ).rejects.toThrow("Failed to send message");
+  });
+
+  it("throws when Formspree form id is not configured", async () => {
+    vi.stubEnv("VITE_FORMSPREE_FORM_ID", "");
+
+    await expect(
+      sendContact({ name: "Jane", email: "jane@example.com", message: "Hi" }),
+    ).rejects.toThrow("VITE_FORMSPREE_FORM_ID is not configured");
   });
 });
