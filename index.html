@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Weverton Rodrigues | Senior Product Engineer</title>
-    <meta
-      name="description"
-      content="Weverton Rodrigues — Senior Product Engineer turning complex ideas into scalable software. AI-native applications, distributed systems, and modern web platforms."
-    />
-    <meta
-      name="keywords"
-      content="Weverton Rodrigues, product engineer, senior software engineer, AI products, system design, React, TypeScript, cloud architecture, technical leadership, Brazil"
-    />
+    <meta name="description" content="Weverton Rodrigues — Senior Product Engineer in Goiânia, Brazil. Portfolio and projects in React, TypeScript, AWS, and AI. Open to senior engineering opportunities." />
+    <meta name="keywords" content="Weverton Rodrigues, senior product engineer, full-stack engineer, AI products, RAG, semantic search, MCP, React, TypeScript, Next.js, NestJS, GraphQL, AWS, Kubernetes, healthcare software, enterprise SaaS, React Native, distributed systems, Goiânia, Brazil" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="en" />
     <meta name="author" content="Weverton Rodrigues" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index, follow" />
@@ -86,8 +82,18 @@
             "@id": "https://weverton.me/#website",
             "url": "https://weverton.me",
             "name": "Weverton Rodrigues",
+            "description": "Senior Product Engineer portfolio — React, TypeScript, AWS, AI",
             "inLanguage": ["en", "es", "pt"],
             "author": { "@id": "https://weverton.me/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://weverton.me/#profilepage",
+            "url": "https://weverton.me",
+            "name": "Weverton Rodrigues — Portfolio",
+            "inLanguage": "en",
+            "mainEntity": { "@id": "https://weverton.me/#person" },
+            "isPartOf": { "@id": "https://weverton.me/#website" }
           }
         ]
       }
@@ -96,16 +102,16 @@
   <body>
     <div id="root"></div>
     <noscript>
-      <main>
-        <h1>Weverton Rodrigues — Senior Product Engineer</h1>
-        <p>
+      <main itemscope itemtype="https://schema.org/ProfilePage">
+        <p itemprop="name"><strong>Weverton Rodrigues — Senior Product Engineer</strong></p>
+        <p itemprop="description">
           Senior Product Engineer building AI-native applications, distributed systems,
           and modern web platforms—from architecture to production.
         </p>
-        <p>Based in Goiânia, Goiás, Brazil. Contact: wevertondev@outlook.com</p>
+        <p>Based in <span itemprop="addressLocality">Goiânia</span>, Goiás, Brazil. Contact: <span itemprop="email">wevertondev@outlook.com</span></p>
         <ul>
-          <li><a href="https://github.com/wevertoum/">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/wevertonfr/">LinkedIn</a></li>
+          <li><a itemprop="sameAs" href="https://github.com/wevertoum/">GitHub</a></li>
+          <li><a itemprop="sameAs" href="https://www.linkedin.com/in/wevertonfr/">LinkedIn</a></li>
         </ul>
       </main>
     </noscript>

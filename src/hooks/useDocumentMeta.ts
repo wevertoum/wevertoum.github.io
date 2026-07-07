@@ -33,6 +33,18 @@ function setMetaName(name: string, content: string) {
   );
 }
 
+function setMetaHttpEquiv(httpEquiv: string, content: string) {
+  upsertMeta(
+    `meta[http-equiv="${httpEquiv}"]`,
+    () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("http-equiv", httpEquiv);
+      return meta;
+    },
+    (meta) => meta.setAttribute("content", content),
+  );
+}
+
 function setMetaProperty(property: string, content: string) {
   upsertMeta(
     `meta[property="${property}"]`,
@@ -103,6 +115,8 @@ export function useDocumentMeta() {
 
     setMetaName("description", description);
     setMetaName("keywords", keywords);
+    setMetaName("language", language);
+    setMetaHttpEquiv("content-language", language);
     setMetaName("author", profile.name);
     setMetaName("robots", "index, follow, max-image-preview:large");
     setMetaName("googlebot", "index, follow");
