@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -19,20 +18,37 @@ TEXT = (237, 237, 237)
 MUTED = (138, 138, 138)
 GRID = (35, 35, 35)
 
+MONO_WEIGHTS = {
+    "regular": ["JetBrainsMono-Regular.ttf", "JetBrainsMonoNL-Regular.ttf"],
+    "medium": ["JetBrainsMono-Medium.ttf", "JetBrainsMonoNL-Medium.ttf"],
+    "semibold": ["JetBrainsMono-SemiBold.ttf", "JetBrainsMonoNL-SemiBold.ttf"],
+    "bold": ["JetBrainsMono-Bold.ttf", "JetBrainsMonoNL-Bold.ttf"],
+}
 
-def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    candidates = [
-        "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-        if bold
-        else "/System/Library/Fonts/Supplemental/Arial.ttf",
-        "/Library/Fonts/Arial Bold.ttf" if bold else "/Library/Fonts/Arial.ttf",
+
+def mono_font_dirs() -> list[Path]:
+    home = Path.home()
+    return [
+        home / "Library/Fonts",
+        Path("/Library/Fonts"),
+        Path("/System/Library/Fonts/Supplemental"),
+        ROOT / "scripts/fonts",
     ]
-    for path in candidates:
-        if os.path.exists(path):
-            try:
-                return ImageFont.truetype(path, size)
-            except OSError:
-                pass
+
+
+def load_mono(
+    size: int,
+    weight: str = "regular",
+) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    filenames = MONO_WEIGHTS.get(weight, MONO_WEIGHTS["regular"])
+    for directory in mono_font_dirs():
+        for filename in filenames:
+            path = directory / filename
+            if path.exists():
+                try:
+                    return ImageFont.truetype(str(path), size)
+                except OSError:
+                    pass
     return ImageFont.load_default()
 
 
@@ -87,12 +103,12 @@ def main() -> None:
     draw = ImageDraw.Draw(img)
     draw_grid(draw)
 
-    mono = load_font(26)
-    title = load_font(50, bold=True)
-    subtitle = load_font(28, bold=True)
-    body = load_font(22)
-    cta = load_font(24, bold=True)
-    footer = load_font(22)
+    mono = load_mono(26)
+    title = load_mono(50, "bold")
+    subtitle = load_mono(28, "medium")
+    body = load_mono(22)
+    cta = load_mono(24, "bold")
+    footer = load_mono(22)
 
     profile = prepare_profile_photo()
     photo_size = profile.size[0]
@@ -123,9 +139,9 @@ def main() -> None:
     draw.text((left, 160), "Weverton Rodrigues", fill=TEXT, font=title)
     draw.text((left, 232), "I turn complex product ideas", fill=MUTED, font=subtitle)
     draw.text((left, 268), "into scalable software.", fill=MUTED, font=subtitle)
-    draw.text((left, 330), "React · TypeScript · AWS · AI", fill=MUTED, font=body)
+    draw.text((left, 330), "React · TypeScript · AWS · Azure · AI", fill=MUTED, font=body)
     draw_cta_button(draw, left, 378, "View Portfolio  →", cta)
-    draw.text((left, 548), "<weverton /> · weverton.me", fill=MUTED, font=footer)
+    draw.text((left, 548), "<weverton /> · weverton.me", fill=ACCENT, font=footer)
 
     img.save(OUT, "PNG", optimize=True)
     print(f"Saved {OUT} ({OUT.stat().st_size} bytes, {W}x{H})")
