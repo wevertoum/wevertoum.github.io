@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { profile } from "@/config/profile";
 import { site } from "@/config/site";
 import { supportedLanguages } from "@/i18n";
+import { THEME_COLORS, useTheme } from "@/hooks/useTheme";
 import { buildStructuredData, type WorkProjectSeo } from "@/lib/seo";
 
 function upsertMeta(
@@ -98,6 +99,7 @@ function setStructuredData(
 
 export function useDocumentMeta() {
   const { t, i18n } = useTranslation();
+  const { theme } = useTheme();
   const language = (i18n.resolvedLanguage ?? "en").slice(0, 2);
   const title = t("meta.title");
   const description = t("meta.description");
@@ -120,7 +122,7 @@ export function useDocumentMeta() {
     setMetaName("author", profile.name);
     setMetaName("robots", "index, follow, max-image-preview:large");
     setMetaName("googlebot", "index, follow");
-    setMetaName("theme-color", "#0A0A0A");
+    setMetaName("theme-color", THEME_COLORS[theme]);
 
     setLink("canonical", site.url);
     for (const lng of supportedLanguages) {
@@ -144,5 +146,5 @@ export function useDocumentMeta() {
     setMetaName("twitter:creator", site.twitterHandle);
 
     setStructuredData(language, workProjects, workListName);
-  }, [language, title, description, keywords, ogImage, workProjects, workListName]);
+  }, [language, title, description, keywords, ogImage, workProjects, workListName, theme]);
 }

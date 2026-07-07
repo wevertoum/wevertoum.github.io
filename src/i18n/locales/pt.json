@@ -8,7 +8,8 @@
     "home": "Início",
     "work": "Trabalho",
     "about": "Sobre",
-    "contact": "Contato"
+    "contact": "Contato",
+    "openMenu": "Abrir menu"
   },
   "home": {
     "eyebrow": "Engenheiro de Produto Senior",
@@ -148,7 +149,13 @@
     "submit": "Vamos Conversar",
     "sending": "Enviando...",
     "success": "Mensagem enviada. Até breve!",
-    "error": "Algo deu errado. Tente novamente."
+    "error": "Algo deu errado. Tente novamente.",
+    "confirm": {
+      "title": "Enviar esta mensagem?",
+      "description": "Sua mensagem será enviada para o Weverton. Revise antes de confirmar.",
+      "confirm": "Enviar mensagem",
+      "cancel": "Cancelar"
+    }
   },
   "availability": {
     "label": "Disponibilidade",
@@ -165,5 +172,9 @@
   },
   "language": {
     "label": "Idioma"
+  },
+  "theme": {
+    "switchToLight": "Ativar modo claro",
+    "switchToDark": "Ativar modo escuro"
   }
 }

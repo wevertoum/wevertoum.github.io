@@ -8,7 +8,8 @@
     "home": "Home",
     "work": "Work",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu"
   },
   "home": {
     "eyebrow": "Senior Product Engineer",
@@ -148,7 +149,13 @@
     "submit": "Let's Talk",
     "sending": "Sending...",
     "success": "Message sent. Talk soon!",
-    "error": "Something went wrong. Try again."
+    "error": "Something went wrong. Try again.",
+    "confirm": {
+      "title": "Send this message?",
+      "description": "Your message will be sent to Weverton. You can review it one more time before confirming.",
+      "confirm": "Send message",
+      "cancel": "Cancel"
+    }
   },
   "availability": {
     "label": "Availability",
@@ -165,5 +172,9 @@
   },
   "language": {
     "label": "Language"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
   }
 }

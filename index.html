@@ -12,6 +12,20 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#0A0A0A" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("weverton-theme");
+          var theme = stored === "light" || stored === "dark" ? stored : "dark";
+          document.documentElement.classList.toggle("dark", theme === "dark");
+          document.documentElement.style.colorScheme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "dark" ? "#0A0A0A" : "#FAFAFA");
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
     <link rel="canonical" href="https://weverton.me/" />
     <link rel="alternate" hreflang="en" href="https://weverton.me/" />
     <link rel="alternate" hreflang="es" href="https://weverton.me/" />

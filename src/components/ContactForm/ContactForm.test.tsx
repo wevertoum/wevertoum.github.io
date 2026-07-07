@@ -59,6 +59,9 @@ describe("ContactForm", () => {
     await user.type(screen.getByLabelText(/message/i), "Hello there");
     await user.click(screen.getByRole("button", { name: /let's talk/i }));
 
+    expect(await screen.findByRole("dialog")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /send message/i }));
+
     await waitFor(() => {
       expect(sendContact).toHaveBeenCalledWith({
         name: "Jane",
