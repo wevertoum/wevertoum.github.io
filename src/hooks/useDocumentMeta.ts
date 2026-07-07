@@ -104,6 +104,7 @@ export function useDocumentMeta() {
   const title = t("meta.title");
   const description = t("meta.description");
   const ogDescription = t("meta.ogDescription");
+  const ogImageAlt = t("meta.ogImageAlt");
   const keywords = t("meta.keywords");
   const ogImage = `${site.url}/og-image.png`;
   const workProjects = useMemo(
@@ -141,7 +142,7 @@ export function useDocumentMeta() {
     setMetaProperty("og:image:width", "1200");
     setMetaProperty("og:image:height", "630");
     setMetaProperty("og:image:type", "image/png");
-    setMetaProperty("og:image:alt", `${profile.name} — ${profile.role}`);
+    setMetaProperty("og:image:alt", ogImageAlt);
 
     setMetaName("twitter:card", "summary_large_image");
     setMetaName("twitter:title", title);
@@ -150,5 +151,5 @@ export function useDocumentMeta() {
     setMetaName("twitter:creator", site.twitterHandle);
 
     setStructuredData(language, workProjects, workListName);
-  }, [language, title, description, ogDescription, keywords, ogImage, workProjects, workListName, theme]);
+  }, [language, title, description, ogDescription, ogImageAlt, keywords, ogImage, workProjects, workListName, theme]);
 }
